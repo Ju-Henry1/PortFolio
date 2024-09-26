@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000; /* Fond noir */
+    color: white; /* Texte blanc */
+    font-family: "Syne", sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    position: fixed;
+    justify-content: center;
+}
+
+/* Style du logo */
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border: 2px solid white;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    margin-left: 70px;
+}
+
+/* Ligne verticale entre le logo et les liens */
+.divider {
+    height: 30px;
+    width: 2px;
+    background-color: white;
+    margin: 0 150px;
+}
+
+/* Liens de navigation */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+    margin-right: 100px;
+}
+
+.nav-links li a:hover {
+    color: #3498db; /* Couleur bleue au hover */
+}
+
+/* Présentation */
+
+.presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.presentation-text h1 {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.presentation-text h2 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+/* Highlight for the name */
+.highlight {
+    color: #3498db; /* Texte bleu pour Julien Henry */
+}
+
+/* Bouton Continuer */
+
+.btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
