@@ -13,6 +13,9 @@ body {
     font-family: "Syne", sans-serif;
 }
 
+h2 {
+    text-align: center;
+}
 /* Navbar styling */
 .navbar {
     width: 100%;
@@ -106,3 +109,50 @@ body {
     background-color: #2980b9;
     transform: scale(1.05);
 }
+
+
+/* A Propos */
+
+.propos {
+    display: flex;
+}
+
+.propos img {
+    width: 20%;
+    margin-left: 5%;
+}
+
+.propos .propos-text {
+    display: flex;
+}
+
+.propos .propos-text h2{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Parcours Scolaire */
+
+.propos .propos-text .parcours-scolaire {
+    display: flexbox;
+}
+
+.propos .propos-text .parcours-scolaire h4 {
+    margin-right: 15px;
+
+}
+
+
+/* Expérience */
+
+.propos .propos-text .expérience {
+    display: flexbox;
+}
+
+.propos .propos-text .expérience h4 {
+    margin-right: 15px;
+
+}
+
+/* Compétences */ 
