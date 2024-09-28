@@ -111,22 +111,22 @@ h2 {
 }
 
 
-/* A Propos */
+/* Informations */
 
-.propos {
+.informations {
     display: flex;
 }
 
-.propos img {
+.informations img {
     width: 20%;
     margin-left: 5%;
 }
 
-.propos .propos-text {
+.informations .informations-text {
     display: flex;
 }
 
-.propos .propos-text h2{
+.informations .informations-text h2{
     display: flex;
     margin-left: 5%;
     margin-right: 5%;
@@ -134,11 +134,11 @@ h2 {
 
 /* Parcours Scolaire */
 
-.propos .propos-text .parcours-scolaire {
+.informations .informations-text .parcours-scolaire {
     display: flexbox;
 }
 
-.propos .propos-text .parcours-scolaire h4 {
+.informations .informations-text .parcours-scolaire h4 {
     margin-right: 15px;
 
 }
@@ -146,13 +146,24 @@ h2 {
 
 /* Expérience */
 
-.propos .propos-text .expérience {
+.informations .informations-text .expérience {
     display: flexbox;
 }
 
-.propos .propos-text .expérience h4 {
+.informations .informations-text .expérience h4 {
     margin-right: 15px;
 
 }
 
 /* Compétences */ 
+
+.competence {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.competence hr {
+    margin-left: 15px;
+    margin-right: 15px;
+}
