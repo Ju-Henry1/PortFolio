@@ -14,6 +14,9 @@ body {
     scroll-behavior: smooth;
 }
 
+h1 {
+   text-align: center;
+}
 h2 {
     text-align: center;
 }
@@ -29,6 +32,8 @@ h3 {
     padding: 40px;
     position: fixed;
     justify-content: center;
+    background-color: #000;
+    z-index: 1000; /* Cacher mon js derrière la navabr */
 }
 
 /* Style du logo */
@@ -117,8 +122,12 @@ h3 {
 
 
 /* Informations */
-
 .informations {
+    text-align: center;
+    padding: 120px;
+}
+
+.informations-text-imag{
     display: flex;
 }
 
@@ -163,9 +172,13 @@ h3 {
 /* Compétences */ 
 
 .competence {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center  ;
+}
+
+.competence-text {
     display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
 }
 
 .competence hr {
