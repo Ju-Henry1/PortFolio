@@ -14,6 +14,11 @@ body {
     scroll-behavior: smooth;
 }
 
+ .projets hr {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
 h1 {
    text-align: center;
 }
@@ -204,4 +209,31 @@ h3 {
 footer {
     margin-top: 10%;
     margin-bottom: 10%;
+}
+
+
+/* Restaurant La Strada */
+
+.restaurant-la-stada {
+    text-align: center;
+    display: flex;
+}
+
+.restaurant-la-stada .text-restaurant-la-stada {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+}
+
+/* Gestion de stage */
+
+.gestion-stage {
+    text-align: center;
+    display: flex;
+    margin-left: 10%;
+}
+
+.gestion-stage .text-gestion-stage {
+    margin-right: 10%;
+    margin-left: 10%;
 }
