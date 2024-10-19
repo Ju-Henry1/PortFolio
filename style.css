@@ -217,6 +217,7 @@ footer {
 .restaurant-la-stada {
     text-align: center;
     display: flex;
+    margin-right: 10%;
 }
 
 .restaurant-la-stada .text-restaurant-la-stada {
@@ -234,6 +235,23 @@ footer {
 }
 
 .gestion-stage .text-gestion-stage {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+/* Breakout */
+
+.breakout {
+    text-align: center;
+    display: flex;
+    margin-left: 10%;
+}
+
+.breakout img {
+    width: 40%;
+}
+
+.breakout .text-breakout {
     margin-right: 10%;
     margin-left: 10%;
 }
