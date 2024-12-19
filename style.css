@@ -14,7 +14,7 @@ body {
     scroll-behavior: smooth;
 }
 
- .projets hr {
+.projets hr {
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -82,7 +82,6 @@ h3 {
 }
 
 /* Présentation */
-
 .presentation {
     display: flex;
     justify-content: center;
@@ -108,7 +107,6 @@ h3 {
 }
 
 /* Bouton Continuer */
-
 .btn {
     background-color: #3498db;
     color: white;
@@ -124,7 +122,6 @@ h3 {
     background-color: #2980b9;
     transform: scale(1.05);
 }
-
 
 /* Informations */
 .informations {
@@ -145,41 +142,17 @@ h3 {
     display: flex;
 }
 
-.informations .informations-text h2{
+.informations .informations-text h2 {
     display: flex;
     margin-left: 5%;
     margin-right: 5%;
 }
 
-/* Parcours Scolaire */
-
-.informations .informations-text .parcours-scolaire {
-    display: flexbox;
-}
-
-.informations .informations-text .parcours-scolaire h4 {
-    margin-right: 15px;
-
-}
-
-
-/* Expérience */
-
-.informations .informations-text .expérience {
-    display: flexbox;
-}
-
-.informations .informations-text .expérience h4 {
-    margin-right: 15px;
-
-}
-
-/* Compétences */ 
-
+/* Compétences */
 .competence {
     width: 50%;
     margin: 0 auto;
-    text-align: center  ;
+    text-align: center;
 }
 
 .competence-text {
@@ -192,28 +165,45 @@ h3 {
 }
 
 /* Projet */
-
 .projets h3 {
     text-align: center;
 }
 
-
 /* Contact */
-
 .contact {
     text-align: center;
 }
 
 /* Footer */
-
 footer {
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    background-color: black; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    text-align: center;
+    padding: 20px;
 }
-
+  
+  footer a {
+    color: white; /* Couleur blanche pour les liens */
+    text-decoration: none; /* Pas de soulignement par défaut */
+    font-size: 14px; /* Même taille que le texte */
+  }
+  
+  footer a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+  }
+  
+  footer p, footer a {
+    margin: 5px; /* Espacement uniforme */
+    display: inline; /* Empile le texte et les liens côte à côte */
+  }
+  
+  footer p {
+    margin: 0; /* Supprimer le margin supplémentaire sur le texte */
+  }
+  
 
 /* Restaurant La Strada */
-
 .restaurant-la-stada {
     text-align: center;
     display: flex;
@@ -227,7 +217,6 @@ footer {
 }
 
 /* Gestion de stage */
-
 .gestion-stage {
     text-align: center;
     display: flex;
@@ -240,7 +229,6 @@ footer {
 }
 
 /* Breakout */
-
 .breakout {
     text-align: center;
     display: flex;
@@ -255,3 +243,136 @@ footer {
     margin-right: 10%;
     margin-left: 10%;
 }
+
+/* Mentions Légales */
+#mentions-legales {
+    background-color: #000000; /* Fond légèrement différent */
+    color: white;
+    padding: 50px 10%;
+    text-align: center;
+    line-height: 1.8;
+}
+
+#mentions-legales .mentions-content {
+    max-width: 80%; /* Limiter la largeur à 80% de l'écran */
+    margin: 0 auto; /* Centrer horizontalement */
+}
+
+#mentions-legales h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff; /* Couleur bleue pour le titre */
+}
+
+#mentions-legales h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+#mentions-legales p {
+    margin: 10px 0;
+    text-align: justify; /* Justification du texte pour une meilleure lecture */
+}
+
+#mentions-legales a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#mentions-legales a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+
+/* MEDIA QUERIES */
+
+/* Pour les tablettes */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .logo {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .presentation-text h1 {
+        font-size: 36px;
+    }
+
+    .presentation-text h2 {
+        font-size: 20px;
+    }
+
+    .informations img {
+        width: 40%;
+        margin-left: 0;
+    }
+
+    .restaurant-la-stada, .gestion-stage, .breakout {
+        flex-direction: column;
+    }
+
+    .restaurant-la-stada img, .gestion-stage img, .breakout img {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+/* Pour les téléphones */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .presentation-text h1 {
+        font-size: 28px;
+    }
+
+    .presentation-text h2 {
+        font-size: 18px;
+    }
+
+    .informations {
+        padding: 60px;
+    }
+
+    .informations img {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .restaurant-la-stada img, .gestion-stage img, .breakout img {
+        width: 80%;
+    }
+
+    .competence-text {
+        flex-direction: column;
+    }
+}
+
+
