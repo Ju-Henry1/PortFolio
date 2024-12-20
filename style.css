@@ -165,6 +165,10 @@ h3 {
 }
 
 /* Projet */
+
+.projets {
+    padding: 120px;
+}
 .projets h3 {
     text-align: center;
 }
