@@ -291,6 +291,45 @@ footer {
     text-decoration: underline;
 }
 
+/* Mentions Légales */
+#plan-site {
+    background-color: #000000; /* Fond légèrement différent */
+    color: white;
+    padding: 110px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+#plan-site .plans-content {
+    max-width: 80%; /* Limiter la largeur à 80% de l'écran */
+    margin: 0 auto; /* Centrer horizontalement */
+}
+
+#plan-site h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff; /* Couleur bleue pour le titre */
+}
+
+#plan-site h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+
+#plan-site a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#plan-site a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
 
 
 /* MEDIA QUERIES */
