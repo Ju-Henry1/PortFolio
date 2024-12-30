@@ -248,6 +248,23 @@ footer {
     margin-left: 10%;
 }
 
+/* Hackademi */
+
+.hackademi {
+    text-align: center;
+    display: flex;
+    margin-left: 10%;
+}
+
+
+.hackademi .text-hackademi {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.
+
+
 /* Mentions Légales */
 #mentions-legales {
     background-color: #000000; /* Fond légèrement différent */
