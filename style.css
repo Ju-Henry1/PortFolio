@@ -372,26 +372,40 @@ footer {
         padding: 10px 15px;
     }
 
-    /* Burger visible */
+    /* Bouton burger visible */
     .navbar-toggle {
         display: block;
+        transition: transform 0.3s;
     }
 
     .nav-links {
-        display: none; /* Masquer par défaut sur mobile */
+        display: none; /* Masquer par défaut */
         position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: #000;
+        top: 100%; /* Juste sous la navbar */
+        right: 10px;
+        width: 70%; /* Largeur */
+        background-color: rgba(0, 0, 0, 0.95); /* Fond noir légèrement transparent */
         flex-direction: column;
         gap: 15px;
         padding: 20px;
-        border: 1px solid white;
+        border: 2px solid white;
+        border-radius: 10px;
+        opacity: 0; /* Invisible par défaut */
+        transform: translateY(-10px); /* Décalage */
+        transition: opacity 0.3s, transform 0.3s ease-out;
     }
 
     /* Activer le menu mobile */
     .nav-links.mobile-active {
         display: flex;
+        opacity: 1; /* Rendre visible */
+        transform: translateY(0); /* Animation douce */
+    }
+
+    .nav-links li a {
+        font-size: 18px; /* Texte plus grand pour mobile */
+        padding: 10px 0;
+        text-align: left;
     }
 
     .presentation-text h1 {
