@@ -1,3 +1,4 @@
+/* Affiage du nom avec animation */
 const txtAnim = document.querySelector('span');
 
 new Typewriter(txtAnim,
@@ -8,3 +9,12 @@ new Typewriter(txtAnim,
 .typeString('<span class="highlight">Julien Henry</span>')
 .pauseFor(3000)
 .start()
+
+/* Menu Burger */
+
+const burger = document.getElementById('burger');
+const navLinks = document.querySelector('.nav-links');
+
+burger.addEventListener('click', () => {
+    navLinks.classList.toggle('mobile-active');
+});

@@ -81,6 +81,14 @@ h3 {
     color: #3498db; /* Couleur bleue au hover */
 }
 
+/* Navbar Burger (pour mobiles) */
+.navbar-toggle {
+    display: none; /* Masqué par défaut */
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
 /* Présentation */
 .presentation {
     display: flex;
@@ -356,23 +364,34 @@ footer {
 
 /* Pour les tablettes */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 20px;
+    .divider {
+        display: none;
     }
 
-    .logo {
-        margin-left: 0;
-        margin-bottom: 20px;
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    /* Burger visible */
+    .navbar-toggle {
+        display: block;
     }
 
     .nav-links {
+        display: none; /* Masquer par défaut sur mobile */
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #000;
         flex-direction: column;
         gap: 15px;
+        padding: 20px;
+        border: 1px solid white;
     }
 
-    .divider {
-        display: none;
+    /* Activer le menu mobile */
+    .nav-links.mobile-active {
+        display: flex;
     }
 
     .presentation-text h1 {
