@@ -442,7 +442,7 @@ footer {
 }
 
 /* Pour les téléphones */
-@media (max-width: 480px) {
+@media (max-width: 480px) and (orientation: portrait) {
     .navbar {
         padding: 20px;
     }
@@ -522,3 +522,10 @@ footer {
 }
 
 
+/* Bloquer  le mode paysage quand on est sur telephone*/
+@media (max-width: 480px) and (orientation: landscape) {
+    body {
+        display: none; /* Cache le contenu */
+    }
+
+}
