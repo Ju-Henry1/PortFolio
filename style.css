@@ -434,9 +434,6 @@ footer {
         height: auto;
     }
 
-    .restaurant-la-stada, .gestion-stage, .breakout {
-        flex-direction: column;
-    }
 
     .restaurant-la-stada img, .gestion-stage img, .breakout img {
         width: 60%;
@@ -497,16 +494,30 @@ footer {
         flex-direction: column;
     }
 
-    .restaurant-la-stada img, .gestion-stage img, .breakout img {
+    .projets {
+        padding: 60px;
+    }
+
+    .restaurant-la-stada img, .gestion-stage img, .breakout img, .hackademi img {
         width: 80%;
+        order: 1;
+        margin: 0 auto;
+    }
+
+    .text-restaurant-la-strada, .text-gestion-stage, .text-breakout, .text-hackademi {
+        order: 2;
+        align-items: center;
+        margin-top: 30px;
     }
 
     .competence-text {
         flex-direction: column;
     }
 
-    .gestion-stage, .restaurant-la-stada, .breakout {
+    .gestion-stage, .restaurant-la-stada, .breakout, .hackademi{
         margin-left: 0;
+        margin-right: 0;
+        flex-direction: column;
     }
 }
 
