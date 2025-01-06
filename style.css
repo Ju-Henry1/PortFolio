@@ -172,6 +172,10 @@ h3 {
     margin-right: 15px;
 }
 
+.competence h4 {
+    margin-bottom: 9px;
+}
+
 /* Projet */
 
 .projets {
@@ -364,48 +368,52 @@ footer {
 
 /* Pour les tablettes */
 @media (max-width: 768px) {
-    .divider {
-        display: none;
-    }
-
-    .navbar {
-        padding: 10px 15px;
-    }
-
     /* Bouton burger visible */
     .navbar-toggle {
         display: block;
-        transition: transform 0.3s;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    .navbar {
+        padding: 20px;
+        justify-content: space-between;
     }
 
     .nav-links {
         display: none; /* Masquer par défaut */
         position: absolute;
-        top: 100%; /* Juste sous la navbar */
-        right: 10px;
-        width: 70%; /* Largeur */
-        background-color: rgba(0, 0, 0, 0.95); /* Fond noir légèrement transparent */
+        top: 60px;
+        right: 0;
+        background-color: black; /* Fond noir */
+        width: 100%;
         flex-direction: column;
-        gap: 15px;
-        padding: 20px;
-        border: 2px solid white;
-        border-radius: 10px;
-        opacity: 0; /* Invisible par défaut */
-        transform: translateY(-10px); /* Décalage */
-        transition: opacity 0.3s, transform 0.3s ease-out;
+        padding: 10px 0;
     }
 
-    /* Activer le menu mobile */
-    .nav-links.mobile-active {
-        display: flex;
-        opacity: 1; /* Rendre visible */
-        transform: translateY(0); /* Animation douce */
+    .nav-links li {
+        text-align: center;
+        margin: 5px 0;
     }
 
     .nav-links li a {
-        font-size: 18px; /* Texte plus grand pour mobile */
-        padding: 10px 0;
-        text-align: left;
+        color: white;
+        font-size: 18px;
+        padding: 10px;
+        margin-right: 0;
+    }
+
+    .nav-links.mobile-active {
+        display: flex; /* Montrer les liens */
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Montrer le séparateur vertical */
+    .divider {
+        display: none;
     }
 
     .presentation-text h1 {
@@ -417,8 +425,9 @@ footer {
     }
 
     .informations img {
-        width: 40%;
+        width: 30%;
         margin-left: 0;
+        height: auto;
     }
 
     .restaurant-la-stada, .gestion-stage, .breakout {
@@ -460,6 +469,7 @@ footer {
     .informations img {
         width: 80%;
         margin-left: 0;
+        height: auto;
     }
 
     .restaurant-la-stada img, .gestion-stage img, .breakout img {
@@ -468,6 +478,10 @@ footer {
 
     .competence-text {
         flex-direction: column;
+    }
+
+    .gestion-stage, .restaurant-la-stada, .breakout {
+        margin-left: 0;
     }
 }
 
