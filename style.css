@@ -319,7 +319,7 @@ footer {
     text-decoration: underline;
 }
 
-/* Mentions Légales */
+/* Plan du site */
 #plan-site {
     background-color: #000000; /* Fond légèrement différent */
     color: white;
@@ -424,6 +424,10 @@ footer {
         font-size: 20px;
     }
 
+    .competence-text {
+        flex-direction: column;
+    }
+
     .informations img {
         width: 30%;
         margin-left: 0;
@@ -443,7 +447,7 @@ footer {
 /* Pour les téléphones */
 @media (max-width: 480px) {
     .navbar {
-        padding: 10px;
+        padding: 20px;
     }
 
     .logo {
@@ -466,10 +470,31 @@ footer {
         padding: 60px;
     }
 
+
     .informations img {
         width: 80%;
-        margin-left: 0;
         height: auto;
+        align-items: center;
+    }
+
+    .informations .informations-text h2 {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .informations .informations-text h5 {
+        margin-bottom: 20px;
+    }
+
+    .informations-text-imag{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .informations-text {
+        flex-direction: column;
     }
 
     .restaurant-la-stada img, .gestion-stage img, .breakout img {
