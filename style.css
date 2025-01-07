@@ -134,16 +134,18 @@ h3 {
 /* Informations */
 .informations {
     text-align: center;
-    padding: 120px;
+    padding: 60px;
+    justify-content: center;
 }
 
 .informations-text-imag{
-    display: flex;
+    display: flow;
 }
 
 .informations img {
     width: 20%;
-    margin-left: 5%;
+    height: auto;
+    margin-bottom: 40px;
 }
 
 .informations .informations-text {
@@ -156,6 +158,10 @@ h3 {
     margin-right: 5%;
 }
 
+.informations .informations-text .parcours-scolaire {
+margin-right: 5%;
+}
+
 /* Compétences */
 .competence {
     width: 50%;
@@ -165,6 +171,7 @@ h3 {
 
 .competence-text {
     display: flex;
+    justify-content: center;
 }
 
 .competence hr {
@@ -223,7 +230,6 @@ footer {
 .restaurant-la-stada {
     text-align: center;
     display: flex;
-    margin-right: 10%;
 }
 
 .restaurant-la-stada .text-restaurant-la-stada {
@@ -232,11 +238,14 @@ footer {
     margin-top: 5%;
 }
 
+.restaurant-la-stada img {
+    width: 40%;
+}
+
 /* Gestion de stage */
 .gestion-stage {
     text-align: center;
     display: flex;
-    margin-left: 10%;
 }
 
 .gestion-stage .text-gestion-stage {
@@ -244,11 +253,15 @@ footer {
     margin-left: 10%;
 }
 
+.gestion-stage img {
+    width: 40%;
+}
+
 /* Breakout */
 .breakout {
     text-align: center;
+    align-items: center;
     display: flex;
-    margin-left: 10%;
 }
 
 .breakout img {
@@ -264,8 +277,8 @@ footer {
 
 .hackademi {
     text-align: center;
+    align-items: center;
     display: flex;
-    margin-left: 10%;
 }
 
 
@@ -274,7 +287,24 @@ footer {
     margin-left: 10%;
 }
 
+.hackademi img {
+    width: 40%;
+    height: 40%;
+}
 
+/*Tous les projets */
+
+.hackademie, .breakout, .gestion-stage, .restaurant-la-stada {
+    align-items: center;
+    justify-content: center;
+}
+
+.hackademie img, .breakout img, .gestion-stage img, .restaurant-la-stada img {
+    max-width: 100%; /* L'image ne dépasse jamais la largeur de son conteneur */
+    height: auto; /* Conserve les proportions de l'image */
+    display: block; /* Évite les marges blanches non désirées */
+    margin: 0 auto; /* Centre l'image dans son conteneur */
+}
 
 /* Mentions Légales */
 #mentions-legales {
@@ -367,8 +397,9 @@ footer {
 /* MEDIA QUERIES */
 
 /* Pour les tablettes */
-@media (max-width: 768px) {
-    /* Bouton burger visible */
+/* Responsive Tablette  768*/
+@media (max-width: 940px) {
+    /* Navbar adjustments */
     .navbar-toggle {
         display: block;
     }
@@ -383,11 +414,11 @@ footer {
     }
 
     .nav-links {
-        display: none; /* Masquer par défaut */
+        display: none;
         position: absolute;
         top: 60px;
         right: 0;
-        background-color: black; /* Fond noir */
+        background-color: black;
         width: 100%;
         flex-direction: column;
         padding: 10px 0;
@@ -399,45 +430,108 @@ footer {
     }
 
     .nav-links li a {
-        color: white;
         font-size: 18px;
         padding: 10px;
         margin-right: 0;
     }
 
     .nav-links.mobile-active {
-        display: flex; /* Montrer les liens */
+        display: flex;
         align-items: center;
         text-align: center;
     }
 
-    /* Montrer le séparateur vertical */
     .divider {
         display: none;
     }
 
+    /* Adjustments in hero section */
     .presentation-text h1 {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     .presentation-text h2 {
-        font-size: 20px;
+        font-size: 16px;
     }
 
+    .btn {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    /* Information Section */
+    .informations-text-imag {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .informations img {
+        width: 50%;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    .informations .informations-text {
+        flex-direction: column;
+    }
+
+    .informations .informations-text h2 {
+        margin-top: 15px;
+        font-size: 18px;
+        display: block;
+    }
+
+    .informations .informations-text h5 {
+        margin-bottom: 20px
+    }
+
+    /* Competencies Section */
     .competence-text {
         flex-direction: column;
     }
 
-    .informations img {
-        width: 30%;
-        margin-left: 0;
-        height: auto;
+    .competence hr {
+        display: none;
     }
 
+    .competence h4 {
+        font-size: 16px;
+    }
 
-    .restaurant-la-stada img, .gestion-stage img, .breakout img {
-        width: 60%;
-        margin: 0 auto;
+    /* Projects Section */
+    .projets > div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .projets img {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    .projets h3 {
+        font-size: 18px;
+    }
+
+    .restaurant-la-stada img, .gestion-stage img, .breakout img, .hackademi img {
+        order: 1;
+    }
+
+    .text-restaurant-la-strada, .text-gestion-stage, .text-breakout, .text-hackademi {
+        order: 2;
+        align-items: center;
+    }
+
+    /* Contact Section */
+    .contact {
+        font-size: 16px;
+    }
+
+    /* Footer Section */
+    footer {
+        font-size: 12px;
     }
 }
 
