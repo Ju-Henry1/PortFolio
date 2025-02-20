@@ -623,13 +623,13 @@ footer {
         padding: 60px;
     }
 
-    .restaurant-la-stada img, .gestion-stage img, .breakout img, .hackademi img {
+    .restaurant-la-stada img, .gestion-stage img, .breakout img, .hackademi img, .toodo img, .jeux img {
         width: 80%;
         order: 1;
         margin: 0 auto;
     }
 
-    .text-restaurant-la-strada, .text-gestion-stage, .text-breakout, .text-hackademi {
+    .text-restaurant-la-strada, .text-gestion-stage, .text-breakout, .text-hackademi, .text-toodo, .text-jeux {
         order: 2;
         align-items: center;
         margin-top: 30px;
@@ -639,7 +639,7 @@ footer {
         flex-direction: column;
     }
 
-    .gestion-stage, .restaurant-la-stada, .breakout, .hackademi{
+    .gestion-stage, .restaurant-la-stada, .breakout, .hackademi, .toodo, .jeux {
         margin-left: 0;
         margin-right: 0;
         flex-direction: column;
