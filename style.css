@@ -225,6 +225,37 @@ footer {
     margin: 0; /* Supprimer le margin supplémentaire sur le texte */
   }
   
+/* Jeux */
+
+.jeux {
+    text-align: center;
+    display: flex;
+}
+
+.jeux .text-jeux {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.jeux img {
+    width: 40%;
+}
+/* Toodo */
+.toodo {
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.toodo .text-toodo{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.toodo img {
+    width: 40%;
+}
+
 
 /* Restaurant La Strada */
 .restaurant-la-stada {
@@ -515,11 +546,11 @@ footer {
         font-size: 18px;
     }
 
-    .restaurant-la-stada img, .gestion-stage img, .breakout img, .hackademi img {
+    .restaurant-la-stada img, .gestion-stage img, .breakout img, .hackademi img .toodo img, .jeux img {
         order: 1;
     }
 
-    .text-restaurant-la-strada, .text-gestion-stage, .text-breakout, .text-hackademi {
+    .text-restaurant-la-strada, .text-gestion-stage, .text-breakout, .text-hackademi, .text-toodo, .text-jeux {
         order: 2;
         align-items: center;
     }
