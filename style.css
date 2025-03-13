@@ -257,22 +257,6 @@ footer {
 }
 
 
-/* Restaurant La Strada */
-.restaurant-la-stada {
-    text-align: center;
-    display: flex;
-}
-
-.restaurant-la-stada .text-restaurant-la-stada {
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 5%;
-}
-
-.restaurant-la-stada img {
-    width: 40%;
-}
-
 /* Gestion de stage */
 .gestion-stage {
     text-align: center;
@@ -323,14 +307,48 @@ footer {
     height: 40%;
 }
 
+/* Cabinet Dubois */
+
+.cabinet-dubois {
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.cabinet-dubois .text-cabinet-dubois {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.cabinet-dubois img {
+    width: 40%;
+}
+
+/* Pointage */
+
+.pointage {
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.pointage .text-pointage {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.pointage img {
+    width: 40%;
+}
+
 /*Tous les projets */
 
-.hackademie, .breakout, .gestion-stage, .restaurant-la-stada {
+.hackademie, .breakout, .gestion-stage, .cabinet-dubois, .pointage, .jeux, .toodo {
     align-items: center;
     justify-content: center;
 }
 
-.hackademie img, .breakout img, .gestion-stage img, .restaurant-la-stada img {
+.hackademie img, .breakout img, .gestion-stage img, .cabinet-dubois img, .pointage img, .jeux img, .toodo img {
     max-width: 100%; /* L'image ne dépasse jamais la largeur de son conteneur */
     height: auto; /* Conserve les proportions de l'image */
     display: block; /* Évite les marges blanches non désirées */
@@ -546,11 +564,11 @@ footer {
         font-size: 18px;
     }
 
-    .restaurant-la-stada img, .gestion-stage img, .breakout img, .hackademi img .toodo img, .jeux img {
+    .cabinet-dubois img, .gestion-stage img, .breakout img, .hackademi img .toodo img, .jeux img {
         order: 1;
     }
 
-    .text-restaurant-la-strada, .text-gestion-stage, .text-breakout, .text-hackademi, .text-toodo, .text-jeux {
+    .text-cabinet-dubois, .text-gestion-stage, .text-breakout, .text-hackademi, .text-toodo, .text-jeux {
         order: 2;
         align-items: center;
     }
@@ -623,13 +641,13 @@ footer {
         padding: 60px;
     }
 
-    .restaurant-la-stada img, .gestion-stage img, .breakout img, .hackademi img, .toodo img, .jeux img {
+    .cabinet-dubois img, .gestion-stage img, .breakout img, .hackademi img, .toodo img, .jeux img {
         width: 80%;
         order: 1;
         margin: 0 auto;
     }
 
-    .text-restaurant-la-strada, .text-gestion-stage, .text-breakout, .text-hackademi, .text-toodo, .text-jeux {
+    .text-cabinet-dubois, .text-gestion-stage, .text-breakout, .text-hackademi, .text-toodo, .text-jeux {
         order: 2;
         align-items: center;
         margin-top: 30px;
@@ -639,7 +657,7 @@ footer {
         flex-direction: column;
     }
 
-    .gestion-stage, .restaurant-la-stada, .breakout, .hackademi, .toodo, .jeux {
+    .gestion-stage, .cabinet-dubois, .breakout, .hackademi, .toodo, .jeux {
         margin-left: 0;
         margin-right: 0;
         flex-direction: column;
